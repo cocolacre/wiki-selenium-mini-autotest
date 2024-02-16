@@ -21,7 +21,8 @@ LOGIN_BUTTON_CSS_SELECTOR = '#pt-login-2 > a > span'
 
 
 
-//*[@id="pt-login-2"]/a/span
+
+#//*[@id="pt-login-2"]/a/span
 
 
 

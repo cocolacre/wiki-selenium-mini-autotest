@@ -6,5 +6,3 @@ misc\
 *.pyc
 .pytest_cache
 .pytest_cache\
-allureReports
-allureReports\

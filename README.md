@@ -1,8 +1,3 @@
-<style>
-h1 {
-  text-align: center;
-}
-</style>
 
 
 This is a basic (en)Wikipedia webpage autotest, that utilizes Selenium and pytest.
@@ -99,3 +94,13 @@ This is a basic (en)Wikipedia webpage autotest, that utilizes Selenium and pytes
     - тест осуществляется лишь с Chrome, другие браузеры не используются, из-за чего невозможно отловить специфичные для других браузеров дефекты.
     - конкретно сайт Википедии с едва ли параметризуется по списку различных локалей\языков, потому как для каждого языкового портала принят свой дизайн главной страницы и других страниц (формы авторизации), включая свои соответствующие селекторы и элементы HTML страницы.
     - не приведена инструкция по установке Java. :)
+
+
+
+<!--
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+-->

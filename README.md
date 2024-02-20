@@ -1,6 +1,6 @@
 
+# This is a basic (en)Wikipedia webpage autotest, that utilizes Selenium and pytest.
 
-This is a basic (en)Wikipedia webpage autotest, that utilizes Selenium and pytest.
 
 # Инструкция по установке и запуску тестов
 

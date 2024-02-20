@@ -1,28 +1,15 @@
-
-
 MAIN_PAGE_LOGO_CSS_SELECTOR = '.mw-logo'
 MAIN_PAGE_MAIN_PAGE_LINK_CSS_SELECTOR = '#ca-nstab-main > a > span'
 MAIN_PAGE_TALK_LINK_CSS_SELECTOR = '#ca-talk > a > span'
-
 MAIN_PAGE_MAIN_MENU_DROPDOWN_CSS_SELECTOR = '#vector-main-menu-dropdown-checkbox'
 MAIN_PAGE_POWERED_BY_CSS_SELECTOR = '#footer-poweredbyico'
 MAIN_PAGE_COPYRIGHT_ICO_CSS_SELECTOR = '#footer-copyrightico'
-
-#articlecount > a:nth-child(1)
-#//*[@id="articlecount"]/a[1]
-#<a href="/wiki/Special:Statistics" title="Special:Statistics">6,784,656</a>
-# 6,784,659 
-#
-#x = $('#articlecount > a')[0].text
-# RU wiki: '.main-top-articleCount'
-
-
+MAIN_PAGE_ARTICLE_COUNT_ELEMENT_CSS_SELECTOR = '.mp-box #articlecount'
+MAIN_PAGE_DROPDOWN_ACCOUNT_MENU_CSS_SELECTOR = '#vector-user-links-dropdown-checkbox'
+MAIN_PAGE_DROPDOWN_LOGOUT_BUTTON_CSS_SELECTOR = '.mw-ui-icon-wikimedia-logOut'
 LOGIN_BUTTON_CSS_SELECTOR = '#pt-login-2 > a > span'
-
-
-
-
-#//*[@id="pt-login-2"]/a/span
-
-
-
+LOGIN_PAGE_USERNAME_INPUT_CSS_SELECTOR = '#wpName1'
+LOGIN_PAGE_PASSWORD_INPUT_CSS_SELECTOR = '#wpPassword1'
+LOGIN_PAGE_SIGN_IN_BUTTON_CSS_SELECTOR = '.mw-htmlform-submit'
+LOGIN_PAGE_INCORRECT_CREDS_MESSAGE_ELEMENT_CSS_SELECTOR = '.cdx-message__content'
+# LOGIN_PAGE_INCORRECT_CREDS_MESSAGE_TEXT = 'Incorrect username or password entered.'

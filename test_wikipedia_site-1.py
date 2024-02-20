@@ -10,6 +10,7 @@ from locators import *
 from wiki_creds import *
 
 
+# ЭТОТ КОММЕНТИРОВАННЫЙ БЛОК - АРТЕФАКТ от предыдущего тест-дизайна.
 #class TestMainPage(unittest.TestCase):
 #    def setUp(self):
 #        self.browser = ...
@@ -70,7 +71,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Главный логотип Википедии не отобразился в браузере за корректное время!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Главный логотип Википедии не отобразился в браузере за корректное время!")
+        # print("Главный логотип Википедии не отобразился в браузере за корректное время!")
         raise TimeoutException(full_msg) from _e
 
     # [1.2] Проверьте, что главная страница отображается корректно.(признак главной страницы №1)
@@ -78,7 +79,7 @@ def test_main_page(browser):
         main_page_link = WebDriverWait(browser, 15).until(EC.presence_of_element_located((By.CSS_SELECTOR, MAIN_PAGE_MAIN_PAGE_LINK_CSS_SELECTOR)))        
     except TimeoutException as _e:
         extended_msg = "На главной страницу не найдена ссылка на саму себя!"
-        print("На главной страницу не найдена ссылка на саму себя!")
+        # print("На главной страницу не найдена ссылка на саму себя!")
         full_msg = f"{extended_msg}, {str(_e)}"
         raise TimeoutException(full_msg) from _e
 
@@ -88,7 +89,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена ссылка на обсуждение главной страницы Википедии!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена ссылка на обсуждение главной страницы Википедии!")
+        # print("Не найдена ссылка на обсуждение главной страницы Википедии!")
         raise TimeoutException(full_msg) from _e
 
     # [1.2] Проверьте, что главная страница отображается корректно.(признак главной страницы №3)
@@ -97,7 +98,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка с выпадающим меню слева!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка с выпадающим меню слева!")
+        # print("Не найдена кнопка с выпадающим меню слева!")
         raise TimeoutException(full_msg) from _e
 
     # [1.2] Проверьте, что главная страница отображается корректно.(признак главной страницы №4)
@@ -114,7 +115,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Wikimedia copyright logo not found! Hence, page was not loaded propely."
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Wikimedia copyright logo not found! Hence, page was not loaded propely.")
+        # print("Wikimedia copyright logo not found! Hence, page was not loaded propely.")
         raise TimeoutException(full_msg) from _e
 
     # [1.2] Проверьте, что главная страница отображается корректно.
@@ -126,7 +127,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка перехода на страницу входа в учётную запись!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка перехода на страницу входа в учётную запись!")
+        # print("Не найдена кнопка перехода на страницу входа в учётную запись!")
         raise TimeoutException(full_msg) from _e
 
     # [1.4] На странице входа введите некорректные данные (№1)
@@ -140,7 +141,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдено поле для ввода имени пользователя!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдено поле для ввода имени пользователя!")
+        # print("Не найдено поле для ввода имени пользователя!")
         raise TimeoutException(full_msg) from _e
 
     # [1.4] На странице входа введите некорректные данные (№2)
@@ -153,7 +154,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдено поле для ввода пароля!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдено поле для ввода пароля!")
+        # print("Не найдено поле для ввода пароля!")
         raise TimeoutException(full_msg) from _e
 
     # [1.4] На странице входа введите некорректные данные ... и нажмите кнопку входа (№3)
@@ -163,7 +164,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка для подтверждения входа в учётную запись!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка для подтверждения входа в учётную запись!")
+        # print("Не найдена кнопка для подтверждения входа в учётную запись!")
         raise TimeoutException(full_msg) from _e
 
     # [1.5] Проверьте, что отображается сообщение об ошибке,
@@ -176,7 +177,7 @@ def test_main_page(browser):
     except Exception as _e:
         extended_msg = "Не найдено сообщение о неверных данных учётной записи!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдено сообщение о неверных данных учётной записи!")
+        # print("Не найдено сообщение о неверных данных учётной записи!")
         raise Exception(full_msg) from _e
 
     # [1.6] Введите корректные данные для входа и нажмите кнопку входа (№1)
@@ -188,7 +189,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдено поле для ввода имени пользователя!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдено поле для ввода имени пользователя!")
+        # print("Не найдено поле для ввода имени пользователя!")
         raise TimeoutException(full_msg) from _e
 
 
@@ -202,7 +203,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдено поле для ввода пароля!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдено поле для ввода пароля!")
+        # print("Не найдено поле для ввода пароля!")
         raise TimeoutException(full_msg) from _e
 
 
@@ -213,7 +214,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка для подтверждения входа в учётную запись!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка для подтверждения входа в учётную запись!")
+        # print("Не найдена кнопка для подтверждения входа в учётную запись!")
         raise TimeoutException(full_msg) from _e
 
     time.sleep(5)
@@ -226,7 +227,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Браузер не отобразил счётчик статей на википедии, значит главная страница не загрузилась!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Браузер не отобразил счётчик статей на википедии, значит главная страница не загрузилась!")
+        # print("Браузер не отобразил счётчик статей на википедии, значит главная страница не загрузилась!")
         raise TimeoutException(full_msg) from _e
 
 
@@ -244,7 +245,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Кнопка выпадающего меню с кнопкой 'Log out' не найдена!"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Кнопка выпадающего меню с кнопкой 'Log out' не найдена!")
+        # print("Кнопка выпадающего меню с кнопкой 'Log out' не найдена!")
         raise TimeoutException(full_msg) from _e
 
     # [1.8] Найдите и кликните на ссылку "Выход", чтобы выйти из системы (№2)
@@ -254,7 +255,7 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка 'Log out' !"
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка 'Log out' !")
+        # print("Не найдена кнопка 'Log out' !")
         raise TimeoutException(full_msg) from _e
 
     # [1.9] Проверьте, что вы успешно вышли из системы и присутствует кнопка "Log in".
@@ -264,5 +265,5 @@ def test_main_page(browser):
     except TimeoutException as _e:
         extended_msg = "Не найдена кнопка 'Log in', а значит не произошёл корректный выход из системы и перенаправление."
         full_msg = f"{extended_msg}, {str(_e)}"
-        print("Не найдена кнопка 'Log in', а значит не произошёл корректный выход из системы и перенаправление.")
+        # print("Не найдена кнопка 'Log in', а значит не произошёл корректный выход из системы и перенаправление.")
         raise TimeoutException(full_msg) from _e

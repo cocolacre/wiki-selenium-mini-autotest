@@ -9,6 +9,16 @@
     python310 -m pip install -r requirements.txt
 
 
+ВАЖНО! Необходимо указать путь до chromedriver.exe в файле conftest.py вместо текущего.
+
+
+    CHROMEDRIVER_PATH = "D:\\chromedriver-win64\\chromedriver.exe"
+
+(это является недостатком дизайна теста. Эту настройку можно либо автоматизировать, выполнив поиск chromedriver при первом запуске, либо вынести эту константу-путь в отдельный файл, или запросить у пользователя указать exe через консоль или через QFileDialog, используя PyQt6.)
+
+
+
+
 Тест можно запустить просто командой pytest.
 
     pytest

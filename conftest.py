@@ -5,6 +5,8 @@ from selenium.webdriver.chrome.service import Service
 
 
 CHROMEDRIVER_PATH = "D:\\chromedriver-win64\\chromedriver.exe"
+
+
 def pytest_addoption(parser):
     parser.addoption('--browser_name', 
                     action='store',
